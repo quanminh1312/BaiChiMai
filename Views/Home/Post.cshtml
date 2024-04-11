@@ -1,0 +1,37 @@
+﻿@model UserBlog
+<div class="container-fluid">
+    <main class="tm-main">
+        <div class="row tm-row tm-mb-120">
+            <div class="col-12">
+                <h2 class="tm-color-primary tm-post-title tm-mb-60">Post Blog</h2>
+            </div>
+            <div class="col-lg-7 tm-contact-left">
+                <form asp-controller="Home" asp-action="Post" method="POST" class="mb-5 ml-auto mr-0 tm-contact-form" enctype="multipart/form-data">
+                    <div class="form-group row mb-4">
+                        <label asp-for="Title" class="col-sm-3 col-form-label text-right tm-color-primary">Tilte</label>
+                        <div class="col-sm-9">
+                            <input class="form-control mr-0 ml-auto" asp-for="Title" type="text" oninput="limitWords(this, 255)" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                        <label for="image" class="col-sm-3 col-form-label text-right tm-color-primary">Image</label>
+                        <div class="col-sm-9">
+                            <input class="form-control mr-0 ml-auto" for="image" type="file" name="image" id="fileInput" onchange="checkFile(this.files[0])" required>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-5">
+                        <label asp-for="Content" class="col-sm-3 col-form-label text-right tm-color-primary">Content</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control mr-0 ml-auto" asp-for="Content" rows="8" oninput="limitWords(this, 255)" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row text-right">
+                        <div class="col-12">
+                            <button class="tm-btn tm-btn-primary tm-btn-small">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>

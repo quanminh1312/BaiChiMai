@@ -1,0 +1,91 @@
+﻿@model UserBlog
+<body>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <div class="row tm-row">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                    <img src="~/img/@Model.Image" alt="Image" class="img-fluid" style=" max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                </div>
+            </div>
+            <div class="row tm-row tm-mb-40">
+                <div class="col-12">
+                    <div class="mb-4">
+                        <h2 class="pt-2 tm-color-primary tm-post-title">@Html.Raw(@Model.Title)</h2>
+                        <p class="tm-mb-40">@Model.DateTime.ToString("MMMM dd, yyyy") posted by @Model.User.Username</p>
+                        <p>
+                            @Model.Content!.ToString()
+                        </p>
+                    </div>
+                    <!-- Comments -->
+                    <div>
+                        <h2 class="tm-color-primary tm-post-title">Comments</h2>
+                        <hr class="tm-hr-primary tm-mb-45">
+                        @foreach (var comment in Model.Comments!)
+                        {
+                            <div class="tm-comment tm-mb-45">
+                                <figure class="tm-comment-figure">
+                                    <img src="~/img/comment.png" alt="Image" class="mb-2 rounded-circle img-thumbnail">
+                                    <figcaption class="tm-color-primary text-center">@comment.userComment!.Username</figcaption>
+                                </figure>
+                                <div>
+                                    <p>
+                                        @comment.Content!.ToString()
+                                    </p>
+                                    <div class="d-flex justify-content-between">
+                                        @{
+                                            var parms = new Dictionary<string, string>
+                                    {
+                                    { "Id", comment.Id.ToString()}
+                                    };
+                                        }
+                                        @if (comment.UserCommentId == ViewBag.Id)
+                                        {
+                                            <a asp-controller="Home" asp-action="DeleteComment" asp-all-route-data="parms" class="tm-color-primary">DELETE</a>
+                                        }
+                                        <span class="tm-color-primary">@comment.DateTime.ToString("MMMM dd, yyyy")</span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <form asp-controller="Home" asp-action="Comment" class="mb-5 tm-comment-form">
+                            <h2 class="tm-color-primary tm-post-title mb-4">Your comment</h2>
+                            <div class="mb-4">
+                                <textarea class="form-control" name="content" rows="6"></textarea>
+                                <input type="hidden" name="blogId" value="@Model.Id" />
+                            </div>
+                            <div class="text-right">
+                                <button class="tm-btn tm-btn-primary tm-btn-small">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div>
+                @{
+                    var param = new Dictionary<string, string>
+                {
+                { "Id", Model.Id.ToString()}
+                };
+                }
+                @if (Model.UserId == ViewBag.Id)
+                {
+                    <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                        <a asp-controller="Home" asp-action="DeleteBlog" asp-all-route-data="param" class="tm-color-primary">DELETE</a>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                        Copyright 2020 Xtra Blog Company Co. Ltd.
+                    </div>
+                }
+            </footer>
+        </main>
+    </div>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/templatemo-script.js"></script>
+</body>

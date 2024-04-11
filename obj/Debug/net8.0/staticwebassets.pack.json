@@ -93,6 +93,66 @@
       "PackagePath": "staticwebassets\\fonts\\genericons-regular-webfont.woff"
     },
     {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\about-01.jpg",
+      "PackagePath": "staticwebassets\\img\\about-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\about-02.jpg",
+      "PackagePath": "staticwebassets\\img\\about-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\about-03.jpg",
+      "PackagePath": "staticwebassets\\img\\about-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\about-04.jpg",
+      "PackagePath": "staticwebassets\\img\\about-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\about-05.jpg",
+      "PackagePath": "staticwebassets\\img\\about-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\comment-1.jpg",
+      "PackagePath": "staticwebassets\\img\\comment-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\comment-2.jpg",
+      "PackagePath": "staticwebassets\\img\\comment-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\comment.png",
+      "PackagePath": "staticwebassets\\img\\comment.png"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\img-01.jpg",
+      "PackagePath": "staticwebassets\\img\\img-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\img-02.jpg",
+      "PackagePath": "staticwebassets\\img\\img-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\img-03.jpg",
+      "PackagePath": "staticwebassets\\img\\img-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\img-04.jpg",
+      "PackagePath": "staticwebassets\\img\\img-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\img-05.jpg",
+      "PackagePath": "staticwebassets\\img\\img-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\img-06.jpg",
+      "PackagePath": "staticwebassets\\img\\img-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
       "Id": "C:\\Users\\admin\\OneDrive\\Desktop\\icpc\\BlogWebsite\\wwwroot\\js\\accordion.js",
       "PackagePath": "staticwebassets\\js\\accordion.js"
     },
